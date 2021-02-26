@@ -26,3 +26,8 @@ endtime=YYYY_MM_DD_HH_mm_SS表示回放结束时间
 
 ## 四、内外网通信
 在外网服务器上搭建消息队列服务器，“消防智能计算中心”实时对需要推流的数据进行监测  
+
+## 五、内网GO语言推流服务  
+依赖的包：  
+go get github.com/go-redis/redis/v8  
+go get github.com/robfig/cron/v3@v3.0.0  
