@@ -26,6 +26,19 @@ endtime=YYYY_MM_DD_HH_mm_SS表示回放结束时间
 
 ## 四、内外网通信
 在外网服务器上搭建消息队列服务器，“消防智能计算中心”实时对需要推流的数据进行监测  
+在“计算中心的Redis”中标识需要推流的路及互联网的地址  
+Redis里的结构如下：  
+开始推流的key：startPush  
+停止推流的key：endPush  
+startPush的json如下：  
+{id: channel: targetUrl: requestIp:}
+endPush的json如下：  
+{id: channel: requestIp:}  
+正在运行的推流runningPush：
+Key:spl_push_id Value:requestIp  
+
+实现流程为：  
+
 
 ## 五、内网GO语言推流服务  
 依赖的包：  
