@@ -31,10 +31,10 @@ Redis里的结构如下：
 开始推流的key：startPush  
 停止推流的key：endPush  
 startPush的json如下：  
-{id: channel: targetUrl: requestIp:}
+{id: channel: targetUrl: requestIp:}  
 endPush的json如下：  
 {id: channel: requestIp:}  
-正在运行的推流runningPush：
+正在运行的推流runningPush：  
 Key:spl_push_id Value:requestIp  
 
 实现流程为：  
